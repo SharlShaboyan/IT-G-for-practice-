@@ -1,0 +1,399 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background-color: #97C339;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 0px;
+}
+
+.back {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.burger {
+    z-index: 7;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    background-color: #97C339;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.burger-menu {
+    z-index: 8;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    top: 0;
+    background-color: #97C339;
+}
+
+.burger-menu > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.burger-menu > ul > li > button {
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.nav {
+    position: absolute;
+    height: 80px;
+    width: auto;
+    right: 0px;
+    top: 40px;
+    background-color: #E1E1E1;
+    opacity: 0.7;
+    z-index: 3;
+}
+
+nav > div > .ul {
+    padding: 10px;
+    display: grid;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    border: 3px solid #97C339;
+}
+
+nav > div > .ul > li > button {
+    font-size: 20px;
+    background-color: #97D612;
+    border: none;
+    text-decoration: none;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.center-contacts {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 400px;
+}
+
+.show-contacts {
+    height: auto;
+    width: 40%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px auto;
+    z-index: 5;
+    padding: 10px;
+}
+
+.close-con {
+    height: 20px;
+    font-size: 20px;
+    width: 20px;
+    float: right;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.show-contacts > h1 {
+    color : black;
+    display: inline-block;
+}
+
+.ul-home > li {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.ul-home > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.icons-home > img {
+    height: 40px;
+    width: 40px;
+    margin: 30px 30px;
+}
+
+.center {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+}
+
+.macbook {
+    margin: 100px auto;
+    width: 400px;
+    height: 350px;
+}
+
+.logo {
+    height: 150px;
+    width: 270px;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.dots-r-div {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    height: 300px;
+    right: 20px;
+    display: grid;
+    margin-top: -350px;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+}
+
+.dots-r {
+    height: 200px;
+    width: 250px;
+    align-self: center;
+    justify-self: right;
+    margin-right: 200px;
+}
+
+.home-title {
+    color: #8559A5;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -230px;
+}
+
+.explore-btn {
+    background-color: #8559A5;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    z-index: 0;
+    transition: all 0.2s linear;
+}
+
+.explore-btn:hover {
+    background-color: white;
+    color: #8559A5;
+    cursor: pointer;
+    border: 3px solid #8559A5;
+}
+
+.down {
+    margin-top: 20px;
+    background-color: #8559A5;
+    font-size: 20px;
+    padding: 8px 10px;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.down:hover {
+    background-color: white;
+    color: #8559A5;
+    cursor: pointer;
+    border: 3px solid #8559A5;
+}
+
+.left-dash {
+    position: absolute;
+    top: 330px;
+    left: 0px;
+    height: 70px;
+    width: 950px;
+    z-index: 2;
+}
+
+.left-up-dash {
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    height: 30px;
+    width: 900px;
+}
+
+.right-dash {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    height: 30px;
+    width: 900px;
+    z-index: 1;
+}
+
+.dots-small {
+    height: 120px;
+    width: 80px;
+    left: 70px;
+    position: absolute;
+    margin-top: 500px;
+}
+
+.dots-top {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    left: 50px;
+    transform: rotate(5deg);
+    opacity: 0.8;
+}
+
+
+@media only screen and (max-width: 1270px) {
+    .nav {
+        width: 400px;
+    }
+
+    .macbook {
+        width: 350px;
+        height: 300px;
+    }
+
+    .left-dash {
+        height: 60px;
+        width: 700px;
+    }
+
+    .right-dash {
+        height: 30px;
+        width: 700px;
+    }
+} 
+
+@media only screen and (max-width: 1050px) {
+    .icons-home > img {
+        height: 30px;
+        width: 30px;
+        margin: 30px 15px;
+    }
+
+    .macbook {
+        width: 300px;
+        height: 250px;
+        margin: 150px auto;
+    }
+
+    .left-dash {
+        height: 60px;
+        width: 500px;
+    }
+
+    .right-dash {
+        height: 30px;
+        width: 500px;
+    }
+
+    .logo {
+        height: 100px;
+        width: 200px;
+        left: 50px;
+        top: 40px;
+    }
+
+    nav > div > .ul > li > button {
+        font-size: 17px;
+    }
+
+    nav > div > .ul {
+        padding: 5px;
+    }
+} 
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .home-title {
+        font-size: 20px;
+    }
+
+    .explore-btn, .down {
+        font-size: 15px;
+    }
+
+    .macbook {
+        width: 250px;
+        height: 200px;
+    }
+
+    .left-dash {
+        height: 40px;
+        width: 300px;
+    }
+
+    .right-dash {
+        height: 30px;
+        width: 300px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 140px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .dots-top {
+        height: 150px;
+        width: 160px;
+        top: 20px;
+        left: -35px;
+    }
+    
+    .dots-r-div {
+        width: 0%;
+        height: 28px;
+        right: 82px;
+        display: grid;
+        margin-top: -310px;
+    }
+}
+
+@media only screen and (max-width: 632px) {
+    .show-contacts {
+        width: 50%;
+    }
+
+    .show-contacts > h1 {
+        font-size: 20px;
+    }
+
+    .icons-home > img {
+        height: 25px;
+        width: 25px;
+        margin: 30px 10px;
+    }
+}
